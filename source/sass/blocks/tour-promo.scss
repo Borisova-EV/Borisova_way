@@ -1,0 +1,52 @@
+.tour-promo {
+  @media(max-width: $tablet-max-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media(max-width: $mobile-max-width) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+}
+
+.tour-promo__text {
+  margin-top: 0;
+  margin-bottom: 31px;
+
+  @media(max-width: $tablet-max-width) {
+    text-align: center;
+    width: 95%;
+    margin-bottom: 7px;
+  }
+
+  @media(max-width: $mobile-max-width) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.tour-promo__link {
+  position: relative;
+  width: 340px;
+
+  @media(max-width: $tablet-max-width) {
+    width: 250px;
+  }
+
+  @media(max-width: $mobile-max-width) {
+    width: 288px;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: 40px;
+    background-image: url("../img/icon/arrow-right.svg");
+    background-repeat: no-repeat;
+  }
+}

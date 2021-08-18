@@ -1,0 +1,21 @@
+.modal-message {
+  width: 728px;
+  height: 444px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $light-pink;
+
+  &--hidden {
+    display: none;
+  }
+
+  p {
+    width: 55%;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 170%;
+    text-align: center;
+    color: $medium-grey;
+  }
+}

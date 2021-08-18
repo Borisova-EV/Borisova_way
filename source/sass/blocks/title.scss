@@ -1,0 +1,64 @@
+.title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.10667px;
+  color: $violet;
+
+  @media (max-width: $tablet-max-width) {
+    font-size: 30px;
+    line-height: 150%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    font-size: 24px;
+  }
+
+  &--white {
+    color: $white;
+  }
+
+  &--underline {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 70%;
+      height: 4px;
+      background-color: $pink;
+
+      @media (max-width: $tablet-max-width) {
+        display: none;
+      }
+    }
+  }
+
+  &--small-font {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: -0.69px;
+
+    @media (max-width: $mobile-max-width) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &--underline-small {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 70%;
+      height: 0.73px;
+      background-color: $pink;
+    }
+  }
+}

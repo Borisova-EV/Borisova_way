@@ -1,0 +1,205 @@
+.page-main {
+  position: relative;
+
+  @media (max-width: $tablet-max-width) {
+    overflow-x: hidden;
+  }
+}
+
+.page-main__promo-container {
+  max-width: 1270px;
+  min-width: 924px;
+  margin: 0 auto 203px;
+  height: 860px;
+  padding-top: 189px;
+  padding-right: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: $tablet-max-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 344px;
+    min-width: 100%;
+    max-width: 100%;
+    padding-top: 60px;
+    padding-left: 0;
+    margin: 0 auto 80px;
+    padding-right: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    height: 433px;
+    padding-top: 0;
+    margin-bottom: 81px;
+  }
+}
+
+.page-main__promo-background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 860px;
+  background-image: url("../img/background/promo.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/promo@2x.jpg");
+  }
+
+  @media (max-width: $tablet-max-width) {
+    height: 344px;
+    background-image: url("../img/background/promo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/promo-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-max-width) {
+    height: 235px;
+    background-image: url("../img/background/promo-mobile.jpg");
+
+  }
+}
+
+.page-main__title {
+  margin-top: 0;
+  margin-bottom: 27px;
+  padding-right: 35px;
+  width: 454px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 15px;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 81px;
+    padding-bottom: 81px;
+    height: 235px;
+    width: 63%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.page-main__tour {
+  width: 460px;
+  padding-right: 80px;
+  padding-left: 5px;
+
+  @media (max-width: $tablet-max-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.page-main__container {
+  max-width: 1270px;
+  min-width: 924px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 100%;
+    min-width: 100%;
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.page-main__places {
+  max-width: 1270px;
+  min-width: 924px;
+  margin: 0 auto 124px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 95px;
+    max-width: 100%;
+    min-width: 100%;
+    padding-left: 21px;
+    padding-right: 21px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.page-main__description {
+  margin-bottom: 231px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 86px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 75px;
+  }
+}
+
+.page-main__price {
+  max-width: 1270px;
+  min-width: 924px;
+  margin: 0 auto 140px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 100%;
+    min-width: 100%;
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-bottom: 110px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 51px;
+  }
+}
+
+.page-main__feedback {
+  max-width: 1270px;
+  min-width: 924px;
+  margin: 0 auto 147px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media (max-width: $tablet-max-width) {
+    min-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 71px;
+    padding-bottom: 73px;
+    margin-bottom: 65px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 45px;
+  }
+}

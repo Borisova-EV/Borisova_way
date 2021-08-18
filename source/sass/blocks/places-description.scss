@@ -1,0 +1,72 @@
+.places-description {
+  position: relative;
+}
+
+.places-description__container {
+  max-width: 1270px;
+  margin: 0 auto 64px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 0;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 100%;
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-bottom: 30px;
+
+  }
+
+  @media (max-width: $mobile-max-width) {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-bottom: 21px;
+  }
+}
+
+.places-description__countries {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 15px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    margin-bottom: 0;
+  }
+}
+
+.places-description__description-list {
+  width: 100%;
+  max-width: 1270px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media (max-width: $tablet-max-width) {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.places-description__background {
+  width: 100vw;
+  height: 1089px;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  background-image: url("../img/background/map.png");
+  z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background/map@2x.png");
+  }
+
+  @media (max-width: $tablet-max-width) {
+    display: none;
+  }
+}

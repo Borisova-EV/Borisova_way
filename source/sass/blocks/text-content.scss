@@ -1,0 +1,24 @@
+.text-content {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.47px;
+
+  @media (max-width: $mobile-max-width) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  &--white {
+    color: $white;
+
+    @media (max-width: $mobile-max-width) {
+      color: $violet;
+    }
+  }
+
+  &--opacity {
+    color: rgba($grey, 0.7);
+  }
+}

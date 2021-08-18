@@ -1,0 +1,94 @@
+.form__container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 26px;
+
+  @media (max-width: $tablet-max-width) {
+    margin-bottom: 21px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 27px;
+    top: 6px;
+    left: 65px;
+    z-index: 2;
+    background-image: url("../img/other/star.png");
+
+    @media (max-width: $mobile-max-width) {
+      left: 10px;
+    }
+  }
+}
+
+.form__input {
+  position: relative;
+  height: 50px;
+  width: 269px;
+  font-size: 14px;
+  padding-top: 6px;
+  line-height: 17px;
+  color: $black;
+  padding-left: 18px;
+  border: 1px solid rgba($grey, 0.3);
+
+  @media (max-width: $mobile-max-width) {
+    width: 100%;
+  }
+
+  &:not(:last-child) {
+    @media (max-width: $mobile-max-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &:hover {
+    border-color: rgba($grey, 0.5);
+  }
+
+  &:focus {
+    border-color: rgba($grey, 0.8);
+  }
+
+  &:invalid {
+    border-color: $pink;
+
+    /*&::before {
+      content: "Данные не верны";
+      position: absolute;
+      font-size: 12px;
+      line-height: 15px;
+      color: $pink;
+    }*/
+  }
+
+  &--telephone {
+    padding-left: 25px;
+  }
+}
+
+.form__submit {
+  width: 176px;
+  height: 50px;
+  margin: 0 auto;
+  border: none;
+
+  @media (max-width: $tablet-max-width) {
+    width: 250px;
+  }
+
+  @media (max-width: $mobile-max-width) {
+    width: 288px;
+  }
+}
